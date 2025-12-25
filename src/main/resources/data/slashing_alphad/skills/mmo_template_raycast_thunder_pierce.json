@@ -1,0 +1,63 @@
+{
+  "name_key": "skill.slashing_alphad.mmo_template_raycast_thunder_pierce",
+  "cooldown_ticks": 16,
+  "element": "lightning",
+  "cast_sound": {
+    "event": "minecraft:item.trident.throw",
+    "source": "players",
+    "volume": 0.9,
+    "pitch": 1.15,
+    "pitch_random": 0.08
+  },
+  "camera_shake": {
+    "intensity": 0.22,
+    "duration": 6,
+    "frequency": 1.2
+  },
+  "screen_flash": {
+    "color": "#BFE8FF",
+    "alpha": 0.1,
+    "duration": 3
+  },
+  "actions": [
+    {
+      "type": "raycast_strike",
+      "delay": 0,
+      "range": 4.8,
+      "steps": 22,
+      "add_sparks": true,
+      "hit": {
+        "radius": 0.75,
+        "damage": 6.5,
+        "knockback": 0.85,
+        "effects": [
+          {
+            "id": "minecraft:weakness",
+            "duration": 40,
+            "amplifier": 0
+          }
+        ]
+      },
+      "hit_fx": {
+        "extra_particles": 14,
+        "hit_shake": {
+          "intensity": 0.45,
+          "duration": 7,
+          "frequency": 1.25
+        },
+        "hit_flash": {
+          "color": "#A8E4FF",
+          "alpha": 0.16,
+          "duration": 4
+        },
+        "hit_sound": {
+          "event": "minecraft:entity.lightning_bolt.thunder",
+          "source": "players",
+          "volume": 0.35,
+          "pitch": 1.1,
+          "pitch_random": 0.05
+        }
+      }
+    }
+  ]
+}

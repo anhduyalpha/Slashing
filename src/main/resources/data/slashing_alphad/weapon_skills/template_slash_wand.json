@@ -1,9 +1,14 @@
 {
   "match": {
-    "items": ["slashing_alphad:slash_wand"]
+    "items": [
+      "slashing_alphad:slash_wand"
+    ]
   },
-
   "skills": [
-    "slashing_alphad:mmo_template_ember_sweep"
+    "slashing_alphad:mmo_template_ember_sweep",
+    "slashing_alphad:mmo_template_raycast_thunder_pierce",
+    "slashing_alphad:mmo_template_curve_firebolt",
+    "slashing_alphad:mmo_template_ground_ice_nova",
+    "slashing_alphad:mmo_template_ultimate_storm_dragon"
   ]
 }

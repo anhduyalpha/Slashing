@@ -83,7 +83,7 @@ public final class MmoSkillReloadListener extends SimpleJsonResourceReloadListen
                 boolean sparks = getBool(obj, "add_sparks", true);
 
                 JsonObject hitObj = obj.has("hit") && obj.get("hit").isJsonObject() ? obj.getAsJsonObject("hit") : new JsonObject();
-                double hitRadius = getD(hitObj, "radius", 0.65);
+double hitRadius = getD(hitObj, "radius", 0.65);
                 float dmg = (float) getD(hitObj, "damage", 6.0);
                 float kb = (float) getD(hitObj, "knockback", 0.6);
                 int fireSec = getInt(hitObj, "fire_seconds", 0);
@@ -112,7 +112,62 @@ public final class MmoSkillReloadListener extends SimpleJsonResourceReloadListen
                 double oy = getD(obj, "origin_y", -0.15);
                 yield new SpiralAction(delay, dur, ppt, off, oy);
             }
-            case "radial_burst" -> {
+            
+case "raycast_strike" -> {
+    double range = getD(obj, "range", 4.5);
+    int steps = getInt(obj, "steps", 18);
+    boolean sparks = getBool(obj, "add_sparks", true);
+
+    JsonObject hitObj = obj.has("hit") && obj.get("hit").isJsonObject() ? obj.getAsJsonObject("hit") : new JsonObject();
+    double hitRadius = getD(hitObj, "radius", 0.65);
+    float dmg = (float) getD(hitObj, "damage", 5.0);
+    float kb = (float) getD(hitObj, "knockback", 0.45);
+    int fireSec = getInt(hitObj, "fire_seconds", 0);
+    List<MobEffectInstance> effects = parseEffects(hitObj);
+    DamageSpec dmgSpec = new DamageSpec(dmg, kb, fireSec, effects, skillElement);
+
+    HitFxSpec hitFx = parseHitFx(obj.has("hit_fx") && obj.get("hit_fx").isJsonObject() ? obj.getAsJsonObject("hit_fx") : null);
+
+    yield new RaycastStrikeAction(delay, range, hitRadius, steps, sparks, dmgSpec, hitFx, skillElement);
+}
+case "ground_aoe" -> {
+    int tele = getInt(obj, "telegraph_ticks", 14);
+    double centerF = getD(obj, "center_forward", 2.0);
+    double centerY = getD(obj, "center_y", 0.0);
+    double radius = getD(obj, "radius", 2.8);
+
+    JsonObject hitObj = obj.has("hit") && obj.get("hit").isJsonObject() ? obj.getAsJsonObject("hit") : new JsonObject();
+    float dmg = (float) getD(hitObj, "damage", 6.0);
+    float kb = (float) getD(hitObj, "knockback", 0.6);
+    int fireSec = getInt(hitObj, "fire_seconds", 0);
+    List<MobEffectInstance> effects = parseEffects(hitObj);
+    DamageSpec dmgSpec = new DamageSpec(dmg, kb, fireSec, effects, skillElement);
+
+    HitFxSpec hitFx = parseHitFx(obj.has("hit_fx") && obj.get("hit_fx").isJsonObject() ? obj.getAsJsonObject("hit_fx") : null);
+
+    yield new GroundAoeAction(delay, tele, centerF, centerY, radius, dmgSpec, hitFx, skillElement);
+}
+case "curve_projectile" -> {
+    double speed = getD(obj, "speed", 0.75);
+    double range = getD(obj, "range", 16.0);
+    double arcH = getD(obj, "arc_height", 0.80);
+    double hitRadius = getD(obj, "hit_radius", 0.45);
+    int pierce = getInt(obj, "pierce", 0);
+    boolean stopOnBlock = getBool(obj, "stop_on_block", true);
+    int trail = getInt(obj, "trail_particles", 2);
+
+    JsonObject hitObj = obj.has("hit") && obj.get("hit").isJsonObject() ? obj.getAsJsonObject("hit") : new JsonObject();
+    float dmg = (float) getD(hitObj, "damage", 4.0);
+    float kb = (float) getD(hitObj, "knockback", 0.25);
+    int fireSec = getInt(hitObj, "fire_seconds", 0);
+    List<MobEffectInstance> effects = parseEffects(hitObj);
+    DamageSpec dmgSpec = new DamageSpec(dmg, kb, fireSec, effects, skillElement);
+
+    HitFxSpec hitFx = parseHitFx(obj.has("hit_fx") && obj.get("hit_fx").isJsonObject() ? obj.getAsJsonObject("hit_fx") : null);
+
+    yield new CurveProjectileAction(delay, speed, range, arcH, hitRadius, pierce, stopOnBlock, trail, dmgSpec, hitFx, skillElement);
+}
+case "radial_burst" -> {
                 int dur = getInt(obj, "duration", 8);
                 double cy = getD(obj, "center_y", 0.10);
                 yield new RadialBurstAction(delay, dur, cy);

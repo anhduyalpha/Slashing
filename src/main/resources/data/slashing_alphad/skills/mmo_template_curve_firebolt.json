@@ -1,0 +1,50 @@
+{
+  "name_key": "skill.slashing_alphad.mmo_template_curve_firebolt",
+  "cooldown_ticks": 12,
+  "element": "fire",
+  "cast_sound": {
+    "event": "minecraft:entity.blaze.shoot",
+    "source": "players",
+    "volume": 0.9,
+    "pitch": 1.0,
+    "pitch_random": 0.06
+  },
+  "actions": [
+    {
+      "type": "curve_projectile",
+      "delay": 0,
+      "speed": 0.95,
+      "range": 18.0,
+      "arc_height": 1.05,
+      "hit_radius": 0.45,
+      "trail_particles": 3,
+      "stop_on_block": true,
+      "pierce": 0,
+      "hit": {
+        "damage": 4.5,
+        "knockback": 0.25,
+        "fire_seconds": 2
+      },
+      "hit_fx": {
+        "extra_particles": 10,
+        "hit_shake": {
+          "intensity": 0.28,
+          "duration": 5,
+          "frequency": 1.0
+        },
+        "hit_flash": {
+          "color": "#FFB347",
+          "alpha": 0.12,
+          "duration": 3
+        },
+        "hit_sound": {
+          "event": "minecraft:entity.generic.burn",
+          "source": "players",
+          "volume": 0.8,
+          "pitch": 1.2,
+          "pitch_random": 0.08
+        }
+      }
+    }
+  ]
+}

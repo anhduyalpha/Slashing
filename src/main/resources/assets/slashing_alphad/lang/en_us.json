@@ -3,7 +3,6 @@
   "key.slashing_alphad.cast": "Cast Skill",
   "key.slashing_alphad.next_form": "Next Form",
   "key.slashing_alphad.prev_form": "Previous Form",
-
   "skill.slashing_alphad.sun_form_1": "Sun Breath - Form I",
   "skill.slashing_alphad.sun_form_2": "Sun Breath - Form II",
   "skill.slashing_alphad.sun_form_3": "Sun Breath - Form III",
@@ -15,6 +14,9 @@
   "skill.slashing_alphad.sun_form_9": "Sun Breath - Form IX",
   "skill.slashing_alphad.sun_form_10": "Sun Breath - Form X",
   "skill.slashing_alphad.sun_form_11": "Sun Breath - Form XI",
-
-  "skill.slashing_alphad.mmo_template_ember_sweep": "MMO Template - Ember Sweep"
+  "skill.slashing_alphad.mmo_template_ember_sweep": "MMO Template - Ember Sweep",
+  "skill.slashing_alphad.mmo_template_raycast_thunder_pierce": "Thunder Pierce",
+  "skill.slashing_alphad.mmo_template_curve_firebolt": "Firebolt",
+  "skill.slashing_alphad.mmo_template_ground_ice_nova": "Ice Nova",
+  "skill.slashing_alphad.mmo_template_ultimate_storm_dragon": "Ultimate Combo - Storm Dragon Breaker"
 }

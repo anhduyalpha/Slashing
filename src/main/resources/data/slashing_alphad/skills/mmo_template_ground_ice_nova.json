@@ -1,0 +1,53 @@
+{
+  "name_key": "skill.slashing_alphad.mmo_template_ground_ice_nova",
+  "cooldown_ticks": 18,
+  "element": "ice",
+  "cast_sound": {
+    "event": "minecraft:block.amethyst_block.hit",
+    "source": "players",
+    "volume": 0.9,
+    "pitch": 0.85,
+    "pitch_random": 0.06
+  },
+  "actions": [
+    {
+      "type": "ground_aoe",
+      "delay": 0,
+      "telegraph_ticks": 16,
+      "center_forward": 2.4,
+      "center_y": 0.0,
+      "radius": 3.1,
+      "hit": {
+        "damage": 6.0,
+        "knockback": 0.45,
+        "effects": [
+          {
+            "id": "minecraft:slowness",
+            "duration": 80,
+            "amplifier": 1
+          }
+        ]
+      },
+      "hit_fx": {
+        "extra_particles": 18,
+        "hit_shake": {
+          "intensity": 0.4,
+          "duration": 6,
+          "frequency": 1.05
+        },
+        "hit_flash": {
+          "color": "#C9F2FF",
+          "alpha": 0.14,
+          "duration": 4
+        },
+        "hit_sound": {
+          "event": "minecraft:block.glass.break",
+          "source": "players",
+          "volume": 0.9,
+          "pitch": 0.95,
+          "pitch_random": 0.05
+        }
+      }
+    }
+  ]
+}

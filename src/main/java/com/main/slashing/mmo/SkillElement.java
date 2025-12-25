@@ -18,7 +18,7 @@ public enum SkillElement implements StringRepresentable {
     LIGHTNING(0xBFA6FF, ParticleTypes.ELECTRIC_SPARK),
     WATER(0x4CC3FF, ParticleTypes.BUBBLE_POP),
     WIND(0xCFFFFF, ParticleTypes.CLOUD),
-    EARTH(0xC2A57A, ParticleTypes.FALLING_DUST),
+    EARTH(0xC2A57A, ParticleTypes.FALLING_HONEY),
     HOLY(0xFFF2A8, ParticleTypes.GLOW),
     DARK(0x5B4B7A, ParticleTypes.SMOKE);
 

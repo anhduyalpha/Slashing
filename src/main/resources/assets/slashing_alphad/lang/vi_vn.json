@@ -3,7 +3,6 @@
   "key.slashing_alphad.cast": "Dùng Kĩ Năng",
   "key.slashing_alphad.next_form": "Thức Kế Tiếp",
   "key.slashing_alphad.prev_form": "Thức Trước",
-
   "skill.slashing_alphad.sun_form_1": "Hơi Thở Mặt Trời - Thức I",
   "skill.slashing_alphad.sun_form_2": "Hơi Thở Mặt Trời - Thức II",
   "skill.slashing_alphad.sun_form_3": "Hơi Thở Mặt Trời - Thức III",
@@ -15,6 +14,9 @@
   "skill.slashing_alphad.sun_form_9": "Hơi Thở Mặt Trời - Thức IX",
   "skill.slashing_alphad.sun_form_10": "Hơi Thở Mặt Trời - Thức X",
   "skill.slashing_alphad.sun_form_11": "Hơi Thở Mặt Trời - Thức XI",
-
-  "skill.slashing_alphad.mmo_template_ember_sweep": "Template MMO - Ember Sweep"
+  "skill.slashing_alphad.mmo_template_ember_sweep": "Template MMO - Ember Sweep",
+  "skill.slashing_alphad.mmo_template_raycast_thunder_pierce": "Đâm Sét",
+  "skill.slashing_alphad.mmo_template_curve_firebolt": "Hỏa Tiễn",
+  "skill.slashing_alphad.mmo_template_ground_ice_nova": "Băng Nổ",
+  "skill.slashing_alphad.mmo_template_ultimate_storm_dragon": "Tuyệt Kỹ Tối Thượng - Long Thần Bão Lôi"
 }

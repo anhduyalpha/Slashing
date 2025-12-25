@@ -1,0 +1,252 @@
+{
+  "name_key": "skill.slashing_alphad.mmo_template_ultimate_storm_dragon",
+  "cooldown_ticks": 120,
+  "element": "lightning",
+  "cast_sound": {
+    "event": "minecraft:entity.lightning_bolt.thunder",
+    "source": "players",
+    "volume": 0.35,
+    "pitch": 0.95,
+    "pitch_random": 0.06
+  },
+  "camera_shake": {
+    "intensity": 3.4,
+    "duration": 16,
+    "frequency": 1.0
+  },
+  "screen_flash": {
+    "color": "#CDEBFF",
+    "alpha": 0.12,
+    "duration": 4
+  },
+  "actions": [
+    {
+      "type": "spiral",
+      "delay": 0,
+      "duration": 16,
+      "points_per_tick": 34,
+      "origin_forward": 0.0,
+      "origin_y": -0.18
+    },
+    {
+      "type": "arc_fan",
+      "delay": 2,
+      "duration": 10,
+      "center_forward": 1.15,
+      "center_y": -0.06,
+      "arc_deg": 240,
+      "radii": [
+        1.25,
+        1.6,
+        1.95
+      ],
+      "steps": 36,
+      "add_sparks": true,
+      "hot": false
+    },
+    {
+      "type": "arc_sweep",
+      "delay": 8,
+      "duration": 6,
+      "center_forward": 1.35,
+      "center_y": -0.06,
+      "arc_deg": 220,
+      "sweep_deg": 85,
+      "radii": [
+        1.4,
+        1.75,
+        2.15
+      ],
+      "steps": 34,
+      "sample_stride": 2,
+      "follow_caster": true,
+      "add_sparks": true,
+      "hit": {
+        "radius": 0.8,
+        "damage": 8.0,
+        "knockback": 0.55,
+        "effects": [
+          {
+            "id": "minecraft:weakness",
+            "duration": 60,
+            "amplifier": 0
+          }
+        ]
+      },
+      "hit_fx": {
+        "extra_particles": 16,
+        "hit_shake": {
+          "intensity": 0.55,
+          "duration": 6,
+          "frequency": 1.2
+        },
+        "hit_flash": {
+          "color": "#B6E6FF",
+          "alpha": 0.18,
+          "duration": 4
+        },
+        "hit_sound": {
+          "event": "minecraft:entity.player.attack_crit",
+          "source": "players",
+          "volume": 0.9,
+          "pitch": 1.1,
+          "pitch_random": 0.06
+        }
+      }
+    },
+    {
+      "type": "raycast_strike",
+      "delay": 13,
+      "range": 6.8,
+      "steps": 28,
+      "add_sparks": true,
+      "hit": {
+        "radius": 0.85,
+        "damage": 9.0,
+        "knockback": 0.85,
+        "effects": [
+          {
+            "id": "minecraft:glowing",
+            "duration": 40,
+            "amplifier": 0
+          }
+        ]
+      },
+      "hit_fx": {
+        "extra_particles": 18,
+        "hit_shake": {
+          "intensity": 0.65,
+          "duration": 7,
+          "frequency": 1.35
+        },
+        "hit_flash": {
+          "color": "#FFFFFF",
+          "alpha": 0.12,
+          "duration": 3
+        },
+        "hit_sound": {
+          "event": "minecraft:entity.lightning_bolt.thunder",
+          "source": "players",
+          "volume": 0.25,
+          "pitch": 1.2,
+          "pitch_random": 0.04
+        }
+      }
+    },
+    {
+      "type": "curve_projectile",
+      "delay": 18,
+      "speed": 1.05,
+      "range": 20.0,
+      "arc_height": 0.7,
+      "hit_radius": 0.5,
+      "trail_particles": 3,
+      "stop_on_block": true,
+      "pierce": 0,
+      "hit": {
+        "damage": 5.0,
+        "knockback": 0.25
+      },
+      "hit_fx": {
+        "extra_particles": 10,
+        "hit_shake": {
+          "intensity": 0.3,
+          "duration": 5,
+          "frequency": 1.05
+        },
+        "hit_flash": {
+          "color": "#CDEBFF",
+          "alpha": 0.1,
+          "duration": 3
+        },
+        "hit_sound": {
+          "event": "minecraft:item.trident.throw",
+          "source": "players",
+          "volume": 0.7,
+          "pitch": 1.25,
+          "pitch_random": 0.08
+        }
+      }
+    },
+    {
+      "type": "curve_projectile",
+      "delay": 20,
+      "speed": 1.05,
+      "range": 20.0,
+      "arc_height": 0.7,
+      "hit_radius": 0.5,
+      "trail_particles": 3,
+      "stop_on_block": true,
+      "pierce": 0,
+      "hit": {
+        "damage": 5.0,
+        "knockback": 0.25
+      },
+      "hit_fx": {
+        "extra_particles": 10,
+        "hit_shake": {
+          "intensity": 0.3,
+          "duration": 5,
+          "frequency": 1.05
+        },
+        "hit_flash": {
+          "color": "#CDEBFF",
+          "alpha": 0.1,
+          "duration": 3
+        },
+        "hit_sound": {
+          "event": "minecraft:item.trident.throw",
+          "source": "players",
+          "volume": 0.7,
+          "pitch": 1.25,
+          "pitch_random": 0.08
+        }
+      }
+    },
+    {
+      "type": "ground_aoe",
+      "delay": 16,
+      "telegraph_ticks": 14,
+      "center_forward": 2.8,
+      "center_y": 0.0,
+      "radius": 3.8,
+      "hit": {
+        "damage": 12.0,
+        "knockback": 1.0,
+        "effects": [
+          {
+            "id": "minecraft:slowness",
+            "duration": 80,
+            "amplifier": 1
+          }
+        ]
+      },
+      "hit_fx": {
+        "extra_particles": 24,
+        "hit_shake": {
+          "intensity": 0.8,
+          "duration": 10,
+          "frequency": 1.05
+        },
+        "hit_flash": {
+          "color": "#A8E4FF",
+          "alpha": 0.2,
+          "duration": 5
+        },
+        "hit_sound": {
+          "event": "minecraft:entity.generic.explode",
+          "source": "players",
+          "volume": 0.9,
+          "pitch": 0.85,
+          "pitch_random": 0.05
+        }
+      }
+    },
+    {
+      "type": "radial_burst",
+      "delay": 30,
+      "duration": 10,
+      "center_y": 0.05
+    }
+  ]
+}
