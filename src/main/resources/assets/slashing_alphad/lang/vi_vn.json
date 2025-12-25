@@ -1,0 +1,20 @@
+{
+  "key.categories.slashing_alphad": "Slashing",
+  "key.slashing_alphad.cast": "Dùng Kĩ Năng",
+  "key.slashing_alphad.next_form": "Thức Kế Tiếp",
+  "key.slashing_alphad.prev_form": "Thức Trước",
+
+  "skill.slashing_alphad.sun_form_1": "Hơi Thở Mặt Trời - Thức I",
+  "skill.slashing_alphad.sun_form_2": "Hơi Thở Mặt Trời - Thức II",
+  "skill.slashing_alphad.sun_form_3": "Hơi Thở Mặt Trời - Thức III",
+  "skill.slashing_alphad.sun_form_4": "Hơi Thở Mặt Trời - Thức IV",
+  "skill.slashing_alphad.sun_form_5": "Hơi Thở Mặt Trời - Thức V",
+  "skill.slashing_alphad.sun_form_6": "Hơi Thở Mặt Trời - Thức VI",
+  "skill.slashing_alphad.sun_form_7": "Hơi Thở Mặt Trời - Thức VII",
+  "skill.slashing_alphad.sun_form_8": "Hơi Thở Mặt Trời - Thức VIII",
+  "skill.slashing_alphad.sun_form_9": "Hơi Thở Mặt Trời - Thức IX",
+  "skill.slashing_alphad.sun_form_10": "Hơi Thở Mặt Trời - Thức X",
+  "skill.slashing_alphad.sun_form_11": "Hơi Thở Mặt Trời - Thức XI",
+
+  "skill.slashing_alphad.mmo_template_ember_sweep": "Template MMO - Ember Sweep"
+}

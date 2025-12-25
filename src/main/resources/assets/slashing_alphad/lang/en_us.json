@@ -1,0 +1,20 @@
+{
+  "key.categories.slashing_alphad": "Slashing",
+  "key.slashing_alphad.cast": "Cast Skill",
+  "key.slashing_alphad.next_form": "Next Form",
+  "key.slashing_alphad.prev_form": "Previous Form",
+
+  "skill.slashing_alphad.sun_form_1": "Sun Breath - Form I",
+  "skill.slashing_alphad.sun_form_2": "Sun Breath - Form II",
+  "skill.slashing_alphad.sun_form_3": "Sun Breath - Form III",
+  "skill.slashing_alphad.sun_form_4": "Sun Breath - Form IV",
+  "skill.slashing_alphad.sun_form_5": "Sun Breath - Form V",
+  "skill.slashing_alphad.sun_form_6": "Sun Breath - Form VI",
+  "skill.slashing_alphad.sun_form_7": "Sun Breath - Form VII",
+  "skill.slashing_alphad.sun_form_8": "Sun Breath - Form VIII",
+  "skill.slashing_alphad.sun_form_9": "Sun Breath - Form IX",
+  "skill.slashing_alphad.sun_form_10": "Sun Breath - Form X",
+  "skill.slashing_alphad.sun_form_11": "Sun Breath - Form XI",
+
+  "skill.slashing_alphad.mmo_template_ember_sweep": "MMO Template - Ember Sweep"
+}

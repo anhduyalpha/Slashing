@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "slashing_alphad:item/slash_wand"
+  }
+}

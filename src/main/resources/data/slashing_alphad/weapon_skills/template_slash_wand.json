@@ -1,0 +1,9 @@
+{
+  "match": {
+    "items": ["slashing_alphad:slash_wand"]
+  },
+
+  "skills": [
+    "slashing_alphad:mmo_template_ember_sweep"
+  ]
+}
